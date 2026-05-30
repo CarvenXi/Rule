@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>223.5.5.5</string>
+					<string>1.12.12.12</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://doh.luo66.de5.net/dns-query</string>
+				
+				<key>SupplementalMatchDomains</key>
+				<array>
+					<string>x.com</string>
+					<string>twitter.com</string>
+					<string>x.ai</string>
+					<string>grok.com</string>
+				</array>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>仅将特定推特与 AI 域名分流至自建 DoH 加密 DNS 服务。</string>
+			<key>PayloadDisplayName</key>
+			<string>特定域名分流 (DoH)</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.dns.managed.doh.custom.split</string>
+			<key>PayloadType</key>
+			<string>com.apple.dns.managed</string>
+			<key>PayloadUUID</key>
+			<string>D4E5F6A7-B8C9-4A01-D234-E567F8901234</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>特定域名分流安全加密 DNS 描述文件</string>
+	<key>PayloadDisplayName</key>
+	<string>推特/X.AI 专属 DoH 分流</string>
+	<key>PayloadIdentifier</key>
+	<string>com.private.dns.custom.split.profile</string>
+	<key>PayloadOrganization</key>
+	<string>PrivateDNS</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>A1B2C3D4-E5F6-4789-9101-112131415161</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
